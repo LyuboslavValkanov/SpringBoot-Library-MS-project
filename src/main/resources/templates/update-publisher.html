@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge" >
+  <title>Update Publisher</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* Navbar */
+ .navbar {
+     background: linear-gradient(90deg, #0d6efd, #0a58ca);
+ }
+
+ .navbar .nav-link,
+ .navbar .navbar-brand {
+     color: white !important;
+ }
+
+ .navbar .nav-link:hover {
+     color: #ffc107 !important;
+ }
+
+
+  </style>
+</head>
+<body>
+<div th:insert="/fragments/header :: header"></div>
+<div class="container my-2">
+  <div class="card">
+    <div class="card-body">
+      <form action="#" th:action="@{/update-publisher/{id}(id=${publisher.id})}" th:object="${publisher}" method="post">
+
+        <div class="row">
+          <div class="form-group col-md-8 p-3 ">
+            <label for="name" class="col-form-label fw-bold">Publisher Name</label>
+            <input type="text" th:field="*{name}" class="form-control " id="name" placeholder="Enter Publisher Name"/>
+
+          </div>
+
+          <div class="col-md-6">
+            <input type="submit" class="btn btn-primary" value="Submit">
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

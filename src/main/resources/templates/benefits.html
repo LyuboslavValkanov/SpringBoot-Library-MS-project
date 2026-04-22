@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+  <meta charset="UTF-8">
+  <title>Why Reading Matters</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* Navbar */
+     .navbar {
+         background: linear-gradient(90deg, #0d6efd, #0a58ca);
+     }
+
+     .navbar .nav-link,
+     .navbar .navbar-brand {
+         color: white !important;
+     }
+
+     .navbar .nav-link:hover {
+         color: #ffc107 !important;
+     }
+    .card {
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<div th:insert="/fragments/header :: header"></div>
+
+<div class="container mt-5">
+
+  <h2 class="text-center mb-4">
+    <i class="fa-solid fa-book-open"></i> Why Reading Books Matters
+  </h2>
+
+  <div class="row g-4">
+
+    <!-- Knowledge -->
+    <div class="col-md-4">
+      <a href="https://blainephelps.medium.com/why-reading-is-the-true-source-of-knowledge-11317b2ab6b0"
+      target="_blank"
+      class="text-decoration-none text-dark">
+      <div class="card shadow text-center p-3 h-100">
+        <i class="fa-solid fa-brain fa-3x text-primary mb-3"></i>
+        <h5>Gain Knowledge</h5>
+        <p>Books expand your understanding of the world and improve your thinking.</p>
+      </div>
+      </a>
+    </div>
+
+    <!-- Focus -->
+    <div class="col-md-4">
+      <a href="https://aows.co/blog/how-im-regaining-my-ability-to-focus-by-reading"
+         target="_blank"
+         class="text-decoration-none text-dark">
+      <div class="card shadow text-center p-3 h-100">
+        <i class="fa-solid fa-bullseye fa-3x text-success mb-3"></i>
+        <h5>Improve Focus</h5>
+        <p>Reading helps you concentrate and stay mentally engaged longer.</p>
+      </div>
+      </a>
+    </div>
+
+    <!-- Vocabulary -->
+    <div class="col-md-4">
+      <a href="https://medium.com/illumination/reading-can-make-you-a-good-communicator-3c7e6b675a11"
+         target="_blank"
+         class="text-decoration-none text-dark">
+      <div class="card shadow text-center p-3 h-100">
+        <i class="fa-solid fa-comments fa-3x text-warning mb-3"></i>
+        <h5>Better Communication</h5>
+        <p>Reading improves vocabulary and communication skills.</p>
+      </div>
+      </a>
+    </div>
+
+    <!-- Stress -->
+    <div class="col-md-4">
+      <a href="https://australiareads.org.au/news/benefits-reading-mental-health/"
+         target="_blank"
+         class="text-decoration-none text-dark">
+      <div class="card shadow text-center p-3 h-100">
+        <i class="fa-solid fa-heart fa-3x text-danger mb-3"></i>
+        <h5>Reduce Stress</h5>
+        <p>Books help you relax and escape daily pressure.</p>
+      </div>
+      </a>
+    </div>
+
+    <!-- Creativity -->
+    <div class="col-md-4">
+      <a href="https://www.osu.edu/impact/arts-and-creativity/fletcher-power-stories"
+         target="_blank"
+         class="text-decoration-none text-dark">
+      <div class="card shadow text-center p-3 h-100">
+        <i class="fa-solid fa-lightbulb fa-3x text-info mb-3"></i>
+        <h5>Boost Creativity</h5>
+        <p>Stories and ideas inspire imagination and innovation.</p>
+      </div>
+      </a>
+    </div>
+
+    <!-- Growth -->
+    <div class="col-md-4">
+      <a href="https://medium.com/@kevinnokiawriting/the-impact-of-reading-on-your-personal-and-professional-life-8bc16fa0a009"
+         target="_blank"
+         class="text-decoration-none text-dark">
+      <div class="card shadow text-center p-3 h-100">
+        <i class="fa-solid fa-chart-line fa-3x text-secondary mb-3"></i>
+        <h5>Personal Growth</h5>
+        <p>Reading helps you grow mentally, emotionally, and professionally.</p>
+      </div>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<footer class="text-center mt-5 p-3 bg-light">
+  <p><i class="fa-solid fa-book"></i> Keep Reading, Keep Growing</p>
+</footer>
+
+</body>
+</html>
